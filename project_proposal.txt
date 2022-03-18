@@ -1,0 +1,17 @@
+1. The goal of my website will be to provide information and highlights about NBA games. The main highlight of the site will be the sports betting feature allowing users to bet and various statistics of the game. 
+
+2. Any NBA fan will visit my site. Also, users interested in sports betting will also visit my site. 
+
+3. I plan on using statistics from NBA games: points, rebounds, steals, blocks, final score, assists, et cetera. 
+
+4. The player table will contain stats for that player: points rebounds steals blocks. The game table will contain information about the game: final score, date, location, team1, team2. The team table will contain information about the team: players, team name. 
+
+5. The API might not have all the information I need. API might not be entirely free. 
+
+6. Email, password, credit card information 
+
+7. Link the video highlights, sports betting, login/logout, 
+
+8. User logins, clicks on a game to view stats, clicks on sports betting tab and places bets
+
+9. Providing betting odds for games on different game statistics. 

@@ -1,0 +1,25 @@
+ div img {
+    width:  100px;
+    height: 100px;
+}
+
+div p {
+    color:red;
+}
+
+h1 {
+    color:green;
+    background-color: red;
+}
+
+body {
+    background-color: aqua;
+}
+
+h2 {
+    align-self: left;
+}
+
+table, th, td {
+    border: 1px solid;
+  }

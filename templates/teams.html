@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>List of All Teams</h1>
+
+
+{% for team in teams %}
+  <div>
+      <p>{{team.name}}<p>
+      <img src = {{team.logo}}>
+      <a href="/teams/{{team.id}}">team details</a>
+  </div>
+{% endfor %}
+
+
+
+
+{% endblock %}

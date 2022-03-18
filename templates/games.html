@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>{{date}}</h1>
+
+<table>
+    <tr>
+        <th>date</th>
+        <th>arena</th>
+        <th>home name</th>
+        <th>home score</th>
+        <th>visitor name</th>
+        <th>visitor score</th>
+        <th>box score</th>
+    </tr>
+{% for game in games_dates %}
+    <tr>
+        <td>{{game.date}}</td>
+        <td>{{game.arena}}</td>
+        <td>{{game.home_name}}</td>
+        <td>{{game.home_score}}</td>
+        <td>{{game.visitor_name}}</td>
+        <td>{{game.visitor_score}}</td>
+        <td><a href="/games/{{game.id}}">game details</a></td>
+    </tr>
+{% endfor %}
+</table>
+
+{% endblock %}

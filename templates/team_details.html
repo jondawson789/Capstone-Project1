@@ -1,0 +1,54 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Teams Details</h1>
+
+<h2>Roster</h2>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birth Date</th>
+        <th>College or Club</th>
+        <th>Weight (kilograms)</th>
+        <th>Height (meters)</th>
+    </tr>
+{% for player in teams_players %}
+    <tr>
+        <td>{{player.first_name}}</td>
+        <td>{{player.last_name}}</td>
+        <td>{{player.birth}}</td>
+        <td>{{player.college}}</td>
+        <td>{{player.weight}}</td>
+        <td>{{player.height}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+<h2>Team Schedule</h2>
+<table>
+    <tr>
+        <th>date</th>
+        <th>arena</th>
+        <th>home name</th>
+        <th>home score</th>
+        <th>visitor name</th>
+        <th>visitor score</th>
+    </tr>
+{% for game in teams_games %}
+    <tr>
+        <td>{{game.date}}</td>
+        <td>{{game.arena}}</td>
+        <td>{{game.home_name}}</td>
+        <td>{{game.home_score}}</td>
+        <td>{{game.visitor_name}}</td>
+        <td>{{game.visitor_score}}</td>
+    </tr>
+{% endfor %}
+</table>
+
+
+
+
+{% endblock %}
