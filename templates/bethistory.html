@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Your Bet History</h1>
+
+
+<table class="table table-dark">
+    <thead>
+    <tr>
+      <th>Game ID</th>
+      <th>Wager</th>
+      <th>Team Name</th>
+      <th>Point Spread</th>
+      <th>Bet Won or Loss</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for bet in user_bets %}
+      
+    <tr>
+        <td>{{bet.game_id}}</td>
+        <td>{{bet.wager}}</td>
+        <td>{{bet.team_bet}}</td>
+        <td>{{bet.team_spread}}</td>
+        <td>{{func(bet.game_id, bet.team_bet, bet.team_spread)}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+
+
+
+
+{% endblock %}

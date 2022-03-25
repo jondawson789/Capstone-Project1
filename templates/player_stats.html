@@ -4,9 +4,10 @@
 
 <h1>Box Score</h1>
 
-<h2>Roster</h2>
-<table>
+<h2>Player Statistics</h2>
+<table class="table table-dark">
     <tr>
+        <th>Team Name</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Points</th>
@@ -17,8 +18,9 @@
     </tr>
 {% for player_stat in players_stats %}
     <tr>
-        <td>{{player_stat.first_name}}</td>
-        <td>{{player_stat.last_name}}</td>
+        <td><img src= "{{player_stat.team_logo}}">{{player_stat.team_name}}</td>
+        <td>{{player_stat.players.first_name}}</td>
+        <td>{{player_stat.players.last_name}}</td>
         <td>{{player_stat.points}}</td>
         <td>{{player_stat.rebounds}}</td>
         <td>{{player_stat.assists}}</td>

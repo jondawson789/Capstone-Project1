@@ -4,7 +4,7 @@
 
 <h1>{{date}}</h1>
 
-<table>
+<table class="table table-dark">
     <tr>
         <th>date</th>
         <th>arena</th>
@@ -22,7 +22,7 @@
         <td>{{game.home_score}}</td>
         <td>{{game.visitor_name}}</td>
         <td>{{game.visitor_score}}</td>
-        <td><a href="/games/{{game.id}}">game details</a></td>
+        <td><a lass="link-light" href="/games/{{game.id}}">game details</a></td>
     </tr>
 {% endfor %}
 </table>

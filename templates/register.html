@@ -1,9 +1,10 @@
 {% extends 'index.html' %}
+{% block title %} Register {% endblock %}
 {% block content %}
 
-<h1>Select Games by Date</h1>
+<h1>Register</h1>
 <div class = "form">
-<form action = "/games" method = "POST">
+<form action = "/register" method = "POST">
     {{ form.hidden_tag() }}
     {% for field in form if field.widget.input_type != 'hidden' %}
         <p>
@@ -15,7 +16,7 @@
             {% endfor %}
         </p>
     {% endfor %}
-<button class=" btn btn-lg btn-warning" type="submit">Submit</button>
+    <button class=" btn btn-lg btn-warning" type="submit">Register</button>
 </form>
 </div>
 

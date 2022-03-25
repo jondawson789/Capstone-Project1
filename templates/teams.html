@@ -4,15 +4,15 @@
 
 <h1>List of All Teams</h1>
 
-
+<div>
 {% for team in teams %}
-  <div>
+  <div class = "team">
       <p>{{team.name}}<p>
       <img src = {{team.logo}}>
-      <a href="/teams/{{team.id}}">team details</a>
+      <a class="link-light" class = "team-details" href="/teams/{{team.id}}">team details</a>
   </div>
 {% endfor %}
-
+</div>
 
 
 

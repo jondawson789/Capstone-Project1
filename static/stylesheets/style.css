@@ -3,23 +3,50 @@
     height: 100px;
 }
 
-div p {
-    color:red;
+td img {
+    width: 25px;
+    height: 25px;
+}
+.form, h1 {
+    text-align: center;
 }
 
-h1 {
-    color:green;
-    background-color: red;
+.team{
+    width:150px;
+    padding:20px;
+    display: inline-block;
 }
 
-body {
-    background-color: aqua;
+
+.StripeElement {
+    background-color: whitesmoke;
+    height: 40px; 
 }
 
-h2 {
-    align-self: left;
+img {
+    width: 300px; 
+    height: 300px;
 }
 
-table, th, td {
-    border: 1px solid;
-  }
+#bet-link{
+    position:absolute;
+    bottom:300px;
+    left:700px;
+}
+
+#vs {
+    position:relative;
+    text-align: center;
+    top:75px;
+}
+
+.team1 {
+    position:absolute;
+    left:400px;
+    top:175px;
+}
+.team2 {
+    position:absolute;
+    right:400px;
+    top:175px;
+}

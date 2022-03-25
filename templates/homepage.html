@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Bet Today!</h1>
+
+<div class = "team1">
+    <b>{{home_team.name}}</b>
+<img src = "{{home_team.logo}}">
+</div>
+
+<h2 id = "vs">VS</h2>
+
+<div class = "team2">
+<b>{{visitor_team.name}}</b>
+<img src = "{{visitor_team.logo}}">
+</div>
+
+<a id = "bet-link" class="link-light" href = "/bet">Click Here to Bet Today!</a>
+
+{% endblock %}
