@@ -23,7 +23,6 @@ app.config['SECRET_KEY'] = "secret"
 debug = DebugToolbarExtension(app)
 
 today = date.today()
-stripe.api_key = "sk_test_51KdQeLEtCEqhAcFn4fh6k2WSM2iFmfUlCdouwjTJkrFRFR5wOqGchZUHyl7y0M1C7oPik6ALjDYvoqML9wU2AriE00QOAmoNzH"
 headers = {
     'x-rapidapi-host': "api-nba-v1.p.rapidapi.com",
     'x-rapidapi-key': NBA_API_KEY
